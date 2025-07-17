@@ -217,15 +217,9 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'architectureSidebar',
-          position: 'left',
-          label: 'Architecture',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'furtherReadingSidebar',
           position: 'left',
-          label: 'Resources',
+          label: 'Further Reading',
         },
         {to: '/blog', label: 'What\'s New', position: 'left'},
         {
@@ -252,11 +246,11 @@ const config: Config = {
             },
             {
               label: 'API Reference',
-              to: '/docs/developers/api-documentation',
+              to: '/docs/developers/pepay-api',
             },
             {
               label: 'SDK Guide',
-              to: '/docs/developers/quickstart',
+              to: '/docs/developers/pepay-sdk',
             },
           ],
         },

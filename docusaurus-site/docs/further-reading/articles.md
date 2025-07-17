@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 title: "Related Articles"
 description: "Explore external articles and resources related to crypto payments, AI agents, and blockchain technology"
 keywords: ["crypto payments", "AI agents", "blockchain", "articles", "resources", "fintech"]

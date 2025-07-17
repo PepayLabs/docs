@@ -79,7 +79,7 @@ Ready to dive in? Choose your path:
 Explore [use cases](./use-cases.md) to see how Pepay can power your next big idea.
 
 ### 👨‍💻 **Developers**
-Jump into our [quickstart guide](../developers/quickstart.md) and start building.
+Jump into our [API documentation](../developers/pepay-api.md) and start building.
 
 ### 🏗️ **Platform Users**
 Test it out live at [pepay.io](https://pepay.io).

@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+title: Architecture & Technical Design
+---
+
 # Architecture & Technical Design
 
 Pepay's design philosophy revolves around **modularity**, **scalability**, and **observability**, ensuring a robust payment layer for AI agents across multiple blockchains. This section dives into how Pepay processes payments, integrates with AI frameworks, and scales to meet demand.

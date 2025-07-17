@@ -3,6 +3,7 @@ title: "Key Features"
 description: "Explore Pepay's core features: multi-chain support, self-custody architecture, developer testnet, partial payments, and autonomous invoicing."
 keywords: ["pepay features", "multi-chain", "self-custody", "developer testnet", "partial payments", "autonomous invoicing", "crypto payments"]
 image: "/img/pepay-social-card.jpg"
+sidebar_position: 1
 ---
 
 # Key Features
@@ -97,4 +98,4 @@ Pepay doesn't just handle payments; it **empowers** AI agents, merchants, and us
 
 - [Architecture & Technical Design](./architecture-and-technical-design.md) - Dive deeper into the tech
 - [Use Cases](./use-cases.md) - Explore real-world applications
-- [Developer Quickstart](../developers/quickstart.md) - Get started with app integrations
+- [Developer API Guide](../developers/pepay-api.md) - Get started with app integrations

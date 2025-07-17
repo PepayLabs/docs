@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 1
 title: PEPAY API Reference
 description: Complete REST API documentation for PEPAY
 ---

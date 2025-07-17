@@ -1,3 +1,8 @@
+---
+sidebar_position: 7
+title: Product Workflow
+---
+
 # Product Workflow
 
 ## Merchant Workflow

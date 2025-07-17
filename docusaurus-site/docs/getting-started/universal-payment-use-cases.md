@@ -1,3 +1,8 @@
+---
+sidebar_position: 3
+title: Universal Payment Use Cases
+---
+
 # Universal Payment Use Cases
 
 ### 1. E-commerce Checkout Widget

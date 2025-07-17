@@ -1,3 +1,8 @@
+---
+sidebar_position: 4
+title: Business Use Cases
+---
+
 # Business Use Cases
 
 ## Business Use Cases

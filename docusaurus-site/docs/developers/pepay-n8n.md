@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 title: PEPAY n8n Integration
 description: Automate cryptocurrency payments with n8n workflows
 ---

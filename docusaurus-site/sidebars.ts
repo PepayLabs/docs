@@ -20,29 +20,14 @@ const sidebars: SidebarsConfig = {
     'getting-started/universal-payment-use-cases',
     'getting-started/business-use-cases',
     'getting-started/competitors',
-    'getting-started/competitors-comparison',
     'getting-started/architecture-and-technical-design',
     'getting-started/product-workflow',
-    'getting-started/faq',
   ],
 
   developersSidebar: [
-    'developers/index',
-    'developers/quickstart',
-    'developers/pepay-sdk',
     'developers/pepay-api',
-    'developers/api-documentation',
+    'developers/pepay-sdk',
     'developers/pepay-n8n',
-    'developers/pepay-elizaos',
-    'developers/faq',
-  ],
-
-  architectureSidebar: [
-    'architecture/index',
-    'architecture/technologies-and-architecture-of-pepay',
-    'architecture/brain-dump',
-    'architecture/openapi',
-    'architecture/integrations',
   ],
 
   furtherReadingSidebar: [

@@ -29,7 +29,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--outline button--lg"
-            to="/docs/developers">
+            to="/docs/developers/pepay-api">
             Developer Docs 👨‍💻
           </Link>
         </div>
