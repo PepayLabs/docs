@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
     'getting-started/universal-payment-use-cases',
     'getting-started/business-use-cases',
     'getting-started/competitors',
+    'getting-started/competitors-comparison',
     'getting-started/architecture-and-technical-design',
     'getting-started/product-workflow',
     'getting-started/faq',
@@ -42,6 +43,10 @@ const sidebars: SidebarsConfig = {
     'architecture/brain-dump',
     'architecture/openapi',
     'architecture/integrations',
+  ],
+
+  furtherReadingSidebar: [
+    'further-reading/articles',
   ],
 };
 

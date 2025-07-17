@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import StructuredData from '@site/src/components/StructuredData';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
@@ -43,6 +44,7 @@ export default function Home(): ReactNode {
     <Layout
       title="Pepay Documentation"
       description="The Payment Layer for Autonomous Agents - Documentation, API Reference, and Developer Guide">
+      <StructuredData />
       <HomepageHeader />
       <main>
         <HomepageFeatures />

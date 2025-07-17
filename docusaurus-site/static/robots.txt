@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://docs.pepay.io/sitemap.xml
+
+# Specific crawling rules
+Allow: /docs/
+Allow: /blog/
+Allow: /img/
+
+# Disallow admin or draft pages
+Disallow: /admin/
+Disallow: /draft/
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 1

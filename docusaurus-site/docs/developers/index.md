@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
-title: Developers
-description: Everything you need to integrate PEPAY into your applications
+title: "Developer Documentation"
+description: "Complete developer guide for integrating Pepay into your applications. APIs, SDKs, and integrations for AI agents and crypto payments."
+keywords: ["pepay API", "pepay SDK", "developer docs", "crypto payment integration", "AI agent payments", "blockchain API", "payment gateway"]
+image: "/img/pepay-social-card.jpg"
 ---
 
 # Developer Documentation

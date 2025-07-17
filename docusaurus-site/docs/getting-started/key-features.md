@@ -1,3 +1,10 @@
+---
+title: "Key Features"
+description: "Explore Pepay's core features: multi-chain support, self-custody architecture, developer testnet, partial payments, and autonomous invoicing."
+keywords: ["pepay features", "multi-chain", "self-custody", "developer testnet", "partial payments", "autonomous invoicing", "crypto payments"]
+image: "/img/pepay-social-card.jpg"
+---
+
 # Key Features
 
 Pepay was built to break the financial barriers holding back AI agents and on-chain economies. Here are the core features that set Pepay apart:

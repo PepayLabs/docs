@@ -1,0 +1,38 @@
+{
+  "name": "Pepay Documentation",
+  "short_name": "Pepay Docs",
+  "description": "The Payment Layer for Autonomous Agents - Documentation, API Reference, and Developer Guide",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/img/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": [
+    "developer-tools",
+    "documentation",
+    "cryptocurrency",
+    "ai",
+    "payments"
+  ],
+  "lang": "en-US",
+  "screenshots": [
+    {
+      "src": "/img/pepay-social-card.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg"
+    }
+  ]
+}

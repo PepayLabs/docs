@@ -1,3 +1,10 @@
+---
+title: "Pepay: The Payment Layer for Autonomous Agents"
+description: "Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing."
+keywords: ["pepay", "AI agents", "autonomous agents", "crypto payments", "payment layer", "self-custody", "multi-chain", "blockchain", "invoicing"]
+image: "/img/pepay-social-card.jpg"
+---
+
 # Pepay: The Payment Layer for Autonomous Agents
 
 *The Missing Piece of the AI Agent Stack*
