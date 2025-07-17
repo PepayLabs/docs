@@ -1,0 +1,18 @@
+{
+  "gcp": {
+    "projectId": "",
+    "bucketName": "docs-pepay-io",
+    "region": "us-central1"
+  },
+  "deployment": {
+    "domain": "docs.pepay.io",
+    "cacheControl": {
+      "static": "public,max-age=31536000",
+      "html": "public,max-age=3600"
+    }
+  },
+  "build": {
+    "nodeEnv": "production",
+    "outputDir": "./build"
+  }
+}
