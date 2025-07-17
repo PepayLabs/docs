@@ -1,0 +1,162 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Modern design system inspired by Apple/Google */
+:root {
+  /* Primary colors - Modern purple/blue gradient */
+  --ifm-color-primary: #667eea;
+  --ifm-color-primary-dark: #5a6fd8;
+  --ifm-color-primary-darker: #5266d6;
+  --ifm-color-primary-darkest: #4254c4;
+  --ifm-color-primary-light: #748dfc;
+  --ifm-color-primary-lighter: #7c95fc;
+  --ifm-color-primary-lightest: #94a9ff;
+  
+  /* Enhanced typography */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --ifm-font-family-monospace: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  --ifm-code-font-size: 95%;
+  
+  /* Spacing and layout */
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-global-radius: 12px;
+  
+  /* Modern shadows */
+  --ifm-global-shadow-lw: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  --ifm-global-shadow-md: 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+  --ifm-global-shadow-tl: 0 8px 24px 0 rgba(0, 0, 0, 0.15);
+  
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode with sophisticated colors */
+[data-theme='dark'] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary-darker: #5b5fe8;
+  --ifm-color-primary-darkest: #4338ca;
+  --ifm-color-primary-light: #9ca3f5;
+  --ifm-color-primary-lighter: #a5acf6;
+  --ifm-color-primary-lightest: #bcc3f8;
+  
+  --ifm-background-color: #0f0f23;
+  --ifm-background-surface-color: #161b22;
+  --ifm-color-content: #e6edf3;
+  --ifm-color-content-secondary: #7d8590;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Hero section styling */
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--ifm-color-primary), #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ifm-color-content-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Custom hero description */
+.heroDescription {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* Modern button styling */
+.button {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.button--secondary {
+  background: linear-gradient(45deg, var(--ifm-color-primary), #764ba2);
+  border: none;
+  color: white;
+}
+
+.button--outline {
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.button--outline:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Modern card styling */
+.card {
+  border-radius: 16px;
+  box-shadow: var(--ifm-global-shadow-lw);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--ifm-global-shadow-md);
+  transform: translateY(-4px);
+}
+
+/* Navbar improvements */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .navbar {
+  background: rgba(15, 15, 35, 0.9);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Sidebar improvements */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.theme-doc-sidebar-item-link {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* Footer improvements */
+.footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
