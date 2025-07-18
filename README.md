@@ -8,7 +8,7 @@ coverY: 38.61333333333332
 _The Missing Piece of the AI Agent Stack_
 
 \
-&#xNAN;_**Built by the team at $PepeRuney**_
+&#xNAN;_**Built by the team at $Pepay**_
 
 ***
 
