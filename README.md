@@ -60,7 +60,6 @@ _The Missing Piece of the AI Agent Stack_
 
 * **CZ’s Vision, Executed**: AI + crypto isn’t hype — it’s _infrastructure_. Pepay’s the proof.
 * **Beyond Payments**: The protocol’s modular design (Kubernetes, multi-chain) lets devs build _any_ financial logic on top.
-* **Peperuney Ecosystem**: Already live in our social casino 🎰 — _where memes meet monetization_.
 
 ***
 
