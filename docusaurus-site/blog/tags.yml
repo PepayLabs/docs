@@ -1,0 +1,64 @@
+changelog:
+  label: Changelog
+  permalink: /changelog
+  description: Protocol updates and release notes
+
+updates:
+  label: Updates
+  permalink: /updates
+  description: Latest updates and features
+
+release:
+  label: Release
+  permalink: /release
+  description: Release announcements
+
+multi-chain:
+  label: Multi-Chain
+  permalink: /multi-chain
+  description: Multi-chain support and integrations
+
+api:
+  label: API
+  permalink: /api
+  description: API development and documentation
+
+milestones:
+  label: Milestones
+  permalink: /milestones
+  description: Project milestones and achievements
+
+accomplishments:
+  label: Accomplishments
+  permalink: /accomplishments
+  description: What we've built and achieved
+
+infrastructure:
+  label: Infrastructure
+  permalink: /infrastructure
+  description: Core infrastructure and architecture
+
+development:
+  label: Development
+  permalink: /development
+  description: Development updates and progress
+
+roadmap:
+  label: Roadmap
+  permalink: /roadmap
+  description: Future plans and roadmap
+
+future:
+  label: Future
+  permalink: /future
+  description: Future features and plans
+
+mainnet:
+  label: MainNet
+  permalink: /mainnet
+  description: MainNet deployment and updates
+
+sdk:
+  label: SDK
+  permalink: /sdk
+  description: SDK development and releases
