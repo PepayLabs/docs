@@ -14,32 +14,31 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
+  // ---- Hosting (GitHub Pages project site) ----
+  // Site will be served at: https://pepaylabs.github.io/docs/
   url: 'https://pepaylabs.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs',
+  baseUrl: '/docs/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'pepay', // Usually your GitHub org/user name.
-  projectName: 'pepay-docs', // Usually your repo name.
+  // GitHub Pages deployment config.
+  organizationName: 'PepayLabs', // GitHub org/user
+  projectName: 'docs',           // Repo name
 
   // SEO and metadata
   trailingSlash: false,
   noIndex: false,
   staticDirectories: ['static'],
   customFields: {
-    description: 'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.',
-    keywords: 'pepay, AI agents, cryptocurrency, payment gateway, blockchain, autonomous agents, crypto payments, multi-chain, self-custody, invoicing',
+    description:
+      'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.',
+    keywords:
+      'pepay, AI agents, cryptocurrency, payment gateway, blockchain, autonomous agents, crypto payments, multi-chain, self-custody, invoicing',
   },
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // useful metadata like html lang.
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -51,10 +50,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Edit links point to the site folder inside the repo
           editUrl:
-            'https://github.com/pepay/pepay-docs/tree/main/',
+            'https://github.com/PepayLabs/docs/tree/main/docusaurus-site/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
           breadcrumbs: true,
@@ -65,20 +63,19 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
             title: 'Pepay Blog',
-            description: 'Latest updates, roadmap, and announcements from the Pepay team',
+            description:
+              'Latest updates, roadmap, and announcements from the Pepay team',
             copyright: `Copyright © ${new Date().getFullYear()} Pepay.`,
             language: 'en',
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pepay/pepay-docs/tree/main/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/PepayLabs/docs/tree/main/docusaurus-site/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
           blogTitle: 'Pepay Blog',
-          blogDescription: 'Latest updates, roadmap, and announcements from the Pepay team',
+          blogDescription:
+            'Latest updates, roadmap, and announcements from the Pepay team',
           blogSidebarTitle: 'Recent posts',
           blogSidebarCount: 10,
           postsPerPage: 10,
@@ -100,7 +97,7 @@ const config: Config = {
           filename: 'sitemap.xml',
         },
         gtag: {
-          trackingID: 'G-XXXXXXXXXX', // Replace with your Google Analytics tracking ID
+          trackingID: 'G-XXXXXXXXXX', // Replace with your Google Analytics ID
           anonymizeIP: true,
         },
       } satisfies Preset.Options,
@@ -112,89 +109,38 @@ const config: Config = {
       '@docusaurus/plugin-pwa',
       {
         debug: true,
-        offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
-          'queryString',
-        ],
+        offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
         pwaHead: [
-          {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/logo.svg',
-          },
-          {
-            tagName: 'link',
-            rel: 'manifest',
-            href: '/manifest.json',
-          },
-          {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: '#667eea',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-capable',
-            content: 'yes',
-          },
-          {
-            tagName: 'meta',
-            name: 'apple-mobile-web-app-status-bar-style',
-            content: '#667eea',
-          },
-          {
-            tagName: 'link',
-            rel: 'apple-touch-icon',
-            href: '/img/logo.svg',
-          },
-          {
-            tagName: 'link',
-            rel: 'mask-icon',
-            href: '/img/logo.svg',
-            color: '#667eea',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileImage',
-            content: '/img/logo.svg',
-          },
-          {
-            tagName: 'meta',
-            name: 'msapplication-TileColor',
-            content: '#667eea',
-          },
+          { tagName: 'link', rel: 'icon', href: '/img/logo.svg' },
+          { tagName: 'link', rel: 'manifest', href: '/manifest.json' },
+          { tagName: 'meta', name: 'theme-color', content: '#667eea' },
+          { tagName: 'meta', name: 'apple-mobile-web-app-capable', content: 'yes' },
+          { tagName: 'meta', name: 'apple-mobile-web-app-status-bar-style', content: '#667eea' },
+          { tagName: 'link', rel: 'apple-touch-icon', href: '/img/logo.svg' },
+          { tagName: 'link', rel: 'mask-icon', href: '/img/logo.svg', color: '#667eea' },
+          { tagName: 'meta', name: 'msapplication-TileImage', content: '/img/logo.svg' },
+          { tagName: 'meta', name: 'msapplication-TileColor', content: '#667eea' },
         ],
       },
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    // Social card for link previews (Docusaurus will prefix with url/baseUrl)
     image: 'img/pepay-social-card.jpg',
     metadata: [
-      {name: 'keywords', content: 'pepay, AI agents, cryptocurrency, payment gateway, blockchain, autonomous agents, crypto payments, multi-chain, self-custody, invoicing, API, SDK'},
-      {name: 'description', content: 'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.'},
-      {name: 'author', content: 'Pepay Team'},
-      {name: 'robots', content: 'index, follow'},
-      {name: 'language', content: 'en'},
-      {name: 'revisit-after', content: '7 days'},
-      {property: 'og:title', content: 'Pepay Documentation - The Payment Layer for Autonomous Agents'},
-      {property: 'og:description', content: 'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.'},
-      {property: 'og:type', content: 'website'},
-      {property: 'og:url', content: 'https://docs.pepay.io'},
-      {property: 'og:site_name', content: 'Pepay Documentation'},
-      {property: 'og:image', content: 'https://docs.pepay.io/img/pepay-social-card.jpg'},
-      {property: 'og:image:width', content: '1200'},
-      {property: 'og:image:height', content: '630'},
-      {property: 'og:image:alt', content: 'Pepay - The Payment Layer for Autonomous Agents'},
-      {name: 'twitter:card', content: 'summary_large_image'},
-      {name: 'twitter:title', content: 'Pepay Documentation - The Payment Layer for Autonomous Agents'},
-      {name: 'twitter:description', content: 'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.'},
-      {name: 'twitter:image', content: 'https://docs.pepay.io/img/pepay-social-card.jpg'},
-      {name: 'twitter:image:alt', content: 'Pepay - The Payment Layer for Autonomous Agents'},
-      {name: 'twitter:site', content: '@pepay'},
-      {name: 'twitter:creator', content: '@pepay'},
+      { name: 'keywords', content: 'pepay, AI agents, cryptocurrency, payment gateway, blockchain, autonomous agents, crypto payments, multi-chain, self-custody, invoicing, API, SDK' },
+      { name: 'description', content: 'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.' },
+      { name: 'author', content: 'Pepay Team' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'language', content: 'en' },
+      { property: 'og:title', content: 'Pepay Documentation - The Payment Layer for Autonomous Agents' },
+      { property: 'og:description', content: 'Pepay is the first protocol enabling AI agents to own their economy with self-custody wallets, multi-chain support, and autonomous invoicing.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Pepay Documentation' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@pepay' },
+      { name: 'twitter:creator', content: '@pepay' },
     ],
     navbar: {
       title: 'Pepay',
@@ -221,17 +167,9 @@ const config: Config = {
           position: 'left',
           label: 'Further Reading',
         },
-        {to: '/blog', label: 'What\'s New', position: 'left'},
-        {
-          href: 'https://pepay.io',
-          label: 'Platform',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/pepay',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { to: '/blog', label: "What's New", position: 'left' },
+        { href: 'https://pepay.io', label: 'Platform', position: 'right' },
+        { href: 'https://github.com/pepay', label: 'GitHub', position: 'right' },
       ],
     },
     footer: {
@@ -240,52 +178,26 @@ const config: Config = {
         {
           title: 'Documentation',
           items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/getting-started',
-            },
-            {
-              label: 'API Reference',
-              to: '/docs/developers/pepay-api',
-            },
-            {
-              label: 'SDK Guide',
-              to: '/docs/developers/pepay-sdk',
-            },
+            // With baseUrl '/docs/', this yields '/docs/docs/getting-started'
+            { label: 'Getting Started', to: '/docs/getting-started' },
+            { label: 'API Reference', to: '/docs/developers/pepay-api' },
+            { label: 'SDK Guide', to: '/docs/developers/pepay-sdk' },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/pepay',
-            },
-            {
-              label: 'X (Twitter)',
-              href: 'https://x.com/pepay',
-            },
-            {
-              label: 'Telegram',
-              href: 'https://t.me/pepay',
-            },
+            { label: 'Discord', href: 'https://discord.gg/pepay' },
+            { label: 'X (Twitter)', href: 'https://x.com/pepay' },
+            { label: 'Telegram', href: 'https://t.me/pepay' },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'Platform',
-              href: 'https://pepay.io',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/pepay',
-            },
-            {
-              label: 'What\'s New',
-              to: '/blog',
-            },
+            { label: 'Platform', href: 'https://pepay.io' },
+            { label: 'GitHub', href: 'https://github.com/pepay' },
+            { label: "What's New", to: '/blog' }, // -> /docs/blog
           ],
         },
       ],
@@ -299,3 +211,4 @@ const config: Config = {
 };
 
 export default config;
+
