@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'docs/docusaurus-site/**'
+      - 'docusaurus-site/**'
       - '.github/workflows/deploy-docs.yml'
   workflow_dispatch:
 
@@ -14,7 +14,7 @@ permissions:
   id-token: write
 
 env:
-  DOCS_DIR: docs/docusaurus-site # <-- change to 'docusaurus-site' if that's your path
+  DOCS_DIR: docusaurus-site
 
 concurrency:
   group: pages
@@ -29,18 +29,25 @@ jobs:
 
       - name: Debug paths
         run: |
-          echo "Workspace:"
-          pwd
-          echo "List $DOCS_DIR:"
+          echo "Listing $DOCS_DIR"
           ls -la "$DOCS_DIR" || true
+          echo "Lockfile?"
+          test -f "$DOCS_DIR/package-lock.json" && echo "FOUND" || echo "MISSING"
 
-      - name: Setup Node
+      # Use cache ONLY if the lockfile actually exists (prevents the 'Some specified paths...' error)
+      - name: Setup Node (with cache)
+        if: ${{ hashFiles(format('{0}/package-lock.json', env.DOCS_DIR)) != '' }}
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          # Point to the lockfile INSIDE your docs dir to avoid the cache-path error
           cache-dependency-path: ${{ env.DOCS_DIR }}/package-lock.json
+
+      - name: Setup Node (no cache fallback)
+        if: ${{ hashFiles(format('{0}/package-lock.json', env.DOCS_DIR)) == '' }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: Install deps
         working-directory: ${{ env.DOCS_DIR }}
